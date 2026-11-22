@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CTRL+ALT+ELITE</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="site-frame">
+    
+
+    <header class="navbar">
+      <a href="#home" class="brand-logo">
+        <span class="brand-icon"><i data-lucide="sparkles"></i></span>
+        <span>CTRL+ALT+ELITE</span>
+      </a>
+
+      <nav class="nav-tabs" aria-label="Primary Navigation">
+        <a href="#home" class="nav-tab active">Home</a>
+        <a href="#members" class="nav-tab">Members</a>
+        <a href="#shared" class="nav-tab">Shared DNA</a>
+        <a href="#trivia" class="nav-tab">Who Among Us?</a>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </header>
+
+
+    <div class="mobile-dropdown" id="mobileDropdown">
+      <a href="#home" class="dropdown-item"><i data-lucide="home"></i> Home</a>
+      <a href="#members" class="dropdown-item"><i data-lucide="users"></i> Meet the Members</a>
+      <a href="#shared" class="dropdown-item"><i data-lucide="git-merge"></i> Shared Interests</a>
+      <a href="#trivia" class="dropdown-item"><i data-lucide="help-circle"></i> Who Among Us?</a>
+    </div>
+
+    <main>
+
+      <section id="home" class="hero-section">
+
+        <span class="geo-shape geo-star-yellow" aria-hidden="true">★</span>
+        <span class="geo-shape geo-square-peach" aria-hidden="true"></span>
+        <span class="geo-shape geo-diamond-teal" aria-hidden="true"></span>
+        <span class="geo-shape geo-star-coral" aria-hidden="true">✦</span>
+
+
+        <div class="hero-left-stack" aria-hidden="true">
+          <div class="pill-badge bg-coral"><i data-lucide="code-2"></i> BSIT 2D</div>
+          <div class="pill-badge bg-lavender"><i data-lucide="cpu"></i> Object-Oriented Programming - IT Elec 2</div>
+          <div class="pill-badge bg-teal"><i data-lucide="terminal"></i> Full-Stack Trio</div>
+        </div>
+
+        <div class="hero-center">
+
+          <div class="palette-dots" aria-hidden="true">
+            <span class="dot bg-coral"></span>
+            <span class="dot bg-lavender"></span>
+            <span class="dot bg-teal"></span>
+            <span class="dot bg-yellow"></span>
+            <span class="dot bg-peach"></span>
+          </div>
+
+          <div class="hero-emblem bg-coral">
+            <i data-lucide="sparkles"></i>
+          </div>
+
+          <h1 class="hero-title">CTRL+ALT+ELITE</h1>
+          <p class="hero-subtitle">Gusto na naming mag-SHIFT.</p>
+          <p class="hero-description">
+            We are a group of BSIT students who share a passion for coding, technology, and innovation. Our goal is to create impactful projects that showcase our skills and creativity.
+          </p>
+
+
+          <div class="hero-tags">
+            <span class="tag-pill bg-cream">HTML</span>
+            <span class="tag-pill bg-lavender">CSS</span>
+            <span class="tag-pill bg-teal">JavaScript</span>
+            <span class="tag-pill bg-yellow">100% Responsive</span>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#members" class="btn btn-primary bg-yellow">
+              <span>Meet the Members</span>
+              <i data-lucide="arrow-down-right"></i>
+            </a>
+            <a href="#trivia" class="btn btn-secondary bg-cream">
+              <span>Play Who Among Us?</span>
+            </a>
+          </div>
+        </div>
+
+
+        <aside class="hero-right-panel bg-yellow">
+          <div class="panel-header">
+            <span class="status-pill bg-teal"><span class="status-circle"></span> Squad Online</span>
+            <span class="panel-badge bg-coral"><i data-lucide="check"></i> Ready</span>
+          </div>
+
+          <div class="squad-preview-box bg-cream">
+            <p class="preview-label">THE PEOPLE BEHIND THE TABS</p>
+            <div class="avatar-cluster" id="heroAvatarCluster">
+
+            </div>
+            <p class="preview-caption">Click any member card below to view full information.</p>
+          </div>
+
+          <div class="mini-projects-box bg-cream">
+            <p class="preview-label">PROJECTS</p>
+            <div id="heroProjectsList" class="mini-project-list">
+ 
+            </div>
+          </div>
+        </aside>
+      </section>
+
+
+      <section id="members" class="section-block">
+        <div class="section-header">
+          <span class="section-kicker bg-coral"><i data-lucide="users"></i> THE GROUP BEHIND THE TAB</span>
+          <h2 class="section-title">Meet the Members</h2>
+          <p class="section-lead">View each member's interests, personality, and goals.</p>
+        </div>
+
+        <div class="members-grid" id="membersGrid">
+
+        </div>
+      </section>
+
+
+      <section id="shared" class="section-block shared-section bg-peach-tint">
+        <div class="section-header">
+          <span class="section-kicker bg-teal"><i data-lucide="git-merge"></i> SAME WAVELENGTH</span>
+          <h2 class="section-title">Our Shared Interests</h2>
+          <p class="section-lead">
+            Computed dynamically via our <code>SharedInterest</code> class by cross-referencing member profiles in real time.
+          </p>
+        </div>
+
+        <div class="segmented-tabs" role="tablist" aria-label="Filter Shared Interests">
+  <div class="segmented-group">
+    <button class="seg-tab active" data-filter="all">All Matches</button>
+    <button class="seg-tab" data-filter="shared">Shared (2+ Members)</button>
+    <button class="seg-tab" data-filter="unique">Unique Traits</button>
+  </div>
+        </div> 
+
+        <div class="shared-grid" id="sharedInterestsGrid">
+
+        </div>
+      </section>
+
+
+      <section id="trivia" class="section-block">
+        <div class="section-header">
+          <span class="section-kicker bg-lavender"><i data-lucide="help-circle"></i> THE GROUP CHAT KNOWS</span>
+          <h2 class="section-title">Who Among Us?</h2>
+          <p class="section-lead">Click "Reveal Answer" on any card to uncover who fits the prompt best—and why.</p>
+        </div>
+
+        <div class="trivia-controls">
+          <button id="revealAllBtn" class="btn btn-secondary bg-yellow">
+            <i data-lucide="eye"></i> Reveal All Answers
+          </button>
+          <button id="resetAllBtn" class="btn btn-secondary bg-cream">
+            <i data-lucide="rotate-ccw"></i> Hide All
+          </button>
+        </div>
+
+        <div class="trivia-grid" id="triviaGrid">
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-left">
+        <strong>CTRL+ALT+ELITE</strong> — BSIT 2D — Object-Oriented Programming
+      </div>
+      <div class="footer-right">
+        A final project requirement for IT Elec 2 by <strong>Gel, Cy, and Tope</strong>
+      </div>
+    </footer>
+  </div>
+
+
+  <div class="modal-backdrop" id="memberModal" role="dialog" aria-modal="true" aria-labelledby="modalMemberName" hidden>
+    <div class="modal-window">
+      <div class="modal-topbar" id="modalTopbar">
+        <span class="modal-tag" id="modalMemberRole">MEMBER PROFILE</span>
+        <button class="modal-close-btn" id="closeModalBtn" aria-label="Close Profile Modal">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="modal-body" id="modalBody">
+
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
