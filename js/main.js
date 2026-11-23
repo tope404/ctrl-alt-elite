@@ -58,7 +58,7 @@ const membersData = [
     accentColor: 'bg-coral',
     avatarSvg: createAvatarSvg('#FF6B6B', 'spiky', false),
     academics: {
-      favoriteSubject: 'Human-Computer Interaction',
+      favoriteSubject: ['Human-Computer Interaction', 'Computer Programming', 'Object-Oriented Programming'],
       favoriteLanguage: 'JavaScript',
       languagesKnown: ['HTML', 'CSS', 'JavaScript', 'Java', 'Python', 'C++'],
       preferredSpecialization: 'Full-Stack & Cybersecurity',
@@ -68,8 +68,8 @@ const membersData = [
     interests: {
       hobbies: ['Penetration Testing', 'Indie Gaming', 'Poem Writing'],
       favoriteMusicGenre: 'Metalcore & Pop Punk',
-      favoriteMovieOrSeries: 'The Amazing Spider-Man',
-      favoriteFood: 'Spicy Chicken',
+      favoriteMovieOrSeries: ['The Amazing Spider-Man','Blue Lock','Haikyuu!!','Before Trilogy'],
+      favoriteFood: 'Sinigang na Baboy',
       favoriteColor: 'Navy Blue'
     },
     personality: {
@@ -176,51 +176,51 @@ const projectsData = [
 const triviaData = [
   {
     id: 'q1',
-    question: "Who's more likely to get lost in cybersecurity?",
-    memberId: 'member-2',
-    votes: { 'member-1': 1, 'member-2': 2, 'member-3': 0 }
+    question: "Who's more likely to pursue cybersecurity?",
+    memberId: 'member-1',
+    votes: { 'member-1': 3, 'member-2': 0, 'member-3': 0 }
   },
   {
     id: 'q2',
-    question: "Who's more likely to obsess over frontend polish?",
-    memberId: 'member-1',
-    votes: { 'member-1': 2, 'member-2': 0, 'member-3': 1 }
+    question: "Who's more likely to finish an assignment minutes before the deadline?",
+    memberId: 'member-3',
+    votes: { 'member-1': 0, 'member-2': 1, 'member-3': 2 }
   },
   {
     id: 'q3',
     question: "Who's more likely to debug code at 3 AM?",
-    memberId: 'member-2',
-    votes: { 'member-1': 1, 'member-2': 2, 'member-3': 0 }
+    memberId: 'member-1',
+    votes: { 'member-1': 2, 'member-2': 1, 'member-3': 0 }
   },
   {
     id: 'q4',
-    question: "Who's more likely to be the biggest gamer?",
-    memberId: 'member-1',
-    votes: { 'member-1': 2, 'member-2': 1, 'member-3': 0 }
+    question: "Who's more likely to get lost even with Google Maps?",
+    memberId: 'member-2',
+    votes: { 'member-1': 0, 'member-2': 3, 'member-3': 0 }
   },
   {
     id: 'q5',
     question: "Who's more likely to become a CEO?",
     memberId: 'member-3',
-    votes: { 'member-1': 0, 'member-2': 1, 'member-3': 2 }
+    votes: { 'member-1': 0, 'member-2': 0, 'member-3': 3 }
   },
   {
     id: 'q6',
     question: "Who's more likely to work abroad?",
-    memberId: 'member-1',
-    votes: { 'member-1': 2, 'member-2': 1, 'member-3': 0 }
+    memberId: 'member-2',
+    votes: { 'member-1': 0, 'member-2': 3, 'member-3': 0 }
   },
   {
     id: 'q7',
     question: "Who's more likely to be the group's tech support?",
-    memberId: 'member-2',
-    votes: { 'member-1': 1, 'member-2': 2, 'member-3': 0 }
+    memberId: 'member-1',
+    votes: { 'member-1': 3, 'member-2': 0, 'member-3': 0 }
   },
   {
     id: 'q8',
     question: "Who's more likely to finish assignments early?",
-    memberId: 'member-3',
-    votes: { 'member-1': 0, 'member-2': 1, 'member-3': 2 }
+    memberId: `member-1`,
+    votes: { 'member-1': 3, 'member-2': 0, 'member-3': 0 }
   }
 ];
 
