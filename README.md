@@ -38,5 +38,3 @@ Developed by **BSIT 2D - Group 5 (Gel, Cy, and Tope)** as a final project requir
 ---
 
 **CTRL+ALT+ELITE — BSIT 2D — Object-Oriented Programming**
-
-*Three Minds. Bright Ideas. Zero Unhandled Exceptions.*
