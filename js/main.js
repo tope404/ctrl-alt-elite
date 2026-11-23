@@ -121,36 +121,36 @@ const membersData = [
   new Member({
     id: 'member-3',
     fullName: 'Kim Cyron Camero',
-    nickname: 'Cy',
-    age: 20,
-    birthday: 'November 09, 2006',
-    intro: 'Systems thinker who bridges data structures, full-stack logic, and project coordination to keep every sprint on schedule.',
+    nickname: 'Cy/Kim',
+    age: 19,
+    birthday: 'February 17, 2007',
+    intro: `Hi, I’m Kim Cyron Camero you can call me Kim or Cy. I’m 19, and I’m working toward my goals one step at a time. As they say, “Life’s too short to be serious all the time unless there’s a deadline.`,
     accentColor: 'bg-lavender',
     avatarSvg: createAvatarSvg('#A78BFA', 'spiky', false),
     academics: {
-      favoriteSubject: 'Human-Computer Interaction',
-      favoriteLanguage: 'Java',
-      languagesKnown: ['Java', 'JavaScript', 'Python', 'SQL'],
-      preferredSpecialization: 'Full-Stack & Systems Architecture',
-      favoriteSoftware: 'Git & Notion',
-      skillToLearn: 'TypeScript & WebGL'
+      favoriteSubject: 'Computer Programming',
+      favoriteLanguage: 'C++',
+      languagesKnown: ['C++', 'JavaScript', 'Python',],
+      preferredSpecialization: 'Networking & Security',
+      favoriteSoftware: 'VS Code',
+      skillToLearn: 'Web Development'
     },
     interests: {
-      hobbies: ['Board Games', 'Mechanical Keyboards', 'Coffee Brewing'],
-      favoriteMusicGenre: 'Jazz Hop',
-      favoriteMovieOrSeries: 'Spider-Man: Across the Spider-Verse',
-      favoriteFood: 'Matcha Cheesecake',
-      favoriteColor: 'Pastel Lavender'
+      hobbies: ['Reading', 'Eating', 'Listening to music'],
+      favoriteMusicGenre: ['Pop', 'Hip-hop/Rap', 'R&B/Soul'],
+      favoriteMovieOrSeries: 'Harry Potter Series',
+      favoriteFood: ['Sinigang', 'Pakbet'],
+      favoriteColor: ['Blue', 'Light Purple']
     },
     personality: {
-      threeWords: ['Organized', 'Empathetic', 'Tenacious'],
-      biggestPetPeeve: 'Starting group documentation two hours before deadline',
-      personalMotto: 'Structure sets creativity free.',
-      randomFact: 'Maintains a color-coded spreadsheet for every semester subject.'
+      threeWords: ['Curious', 'Determined', 'Easy-going'],
+      biggestPetPeeve: `A person who doesn't use their brain.`,
+      personalMotto: 'Still growing, still glowing, still figuring it out.',
+      randomFact: `I’m a crammer I work best when the deadline gets close.`
     },
     goals: {
-      dreamCountry: 'Canada',
-      biggestCareerGoal: 'Lead Design Engineer at a Creative Tech Studio'
+      dreamCountry: 'Japan and France',
+      biggestCareerGoal: `My biggest career goal is to become a licensed Engineer.`
     }
   })
 ];
