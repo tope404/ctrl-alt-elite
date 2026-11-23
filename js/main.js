@@ -48,6 +48,8 @@ function createAvatarSvg(bgHex, hairStyle, glasses = false) {
 
 
 const membersData = [
+
+// Christopher Madamba
   new Member({
     id: 'member-1',
     fullName: 'Christopher Madamba',
@@ -83,6 +85,8 @@ const membersData = [
       biggestCareerGoal: 'To be a cybersecurity expert and a full-stack developer who can create secure and efficient web applications.'
     }
   }),
+
+// Angel Rolleda
   new Member({
     id: 'member-2',
     fullName: 'Angel Rolleda',
@@ -118,6 +122,8 @@ const membersData = [
       biggestCareerGoal: `To become successful in the tech industry, continuously improve my skills, and build something meaningful that can make people's lives easier.`,
     }
   }),
+
+// Kim Cyron Camero
   new Member({
     id: 'member-3',
     fullName: 'Kim Cyron Camero',
